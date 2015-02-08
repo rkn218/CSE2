@@ -24,13 +24,21 @@ public class Bicycle{
   	    PI=3.14159, //
   	    feetPerMile=5280,  //
   	    inchesPerFoot=12,   //
-  	    secondsPerMinute=60;    //
+  	    secondsPerMinute=60, //
+  	    circumfrence=PI*wheelDiameter; //
         
-        double distance=wheelDiameter*nCounts*PI/inchesPerFoot/feetPerMile; //was given in inches and converted to miles
-        double time=Seconds/secondsPerMinute; //converted into mins from seconds
-        double speed=distance/(time/60);
+        double distance=(circumfrence*nCounts/inchesPerFoot/feetPerMile); //was given in inches and converted to miles
+        double time=(Seconds/secondsPerMinute); //converted into mins from seconds
+        double speed=(distance/(time/60));
         
-        System.out.println("The distance was: " + distance + " miles and took: " + time + " minutes.");
+        distance = (int)(distance*100);
+        distance = distance/100;
+        time = (int)(time*100);
+        time = time/100;
+        speed = (int)(speed*100);
+        speed = speed/100;
+        
+        System.out.println("The distance was " + distance + " miles and took " + time + " minutes.");
         System.out.println("The average mph was " + speed );
         
         
