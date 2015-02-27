@@ -3,7 +3,7 @@
 //  Root java program
 //  Estimating the cube root
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 //  Define a class
 public class FourDigits{
@@ -30,7 +30,9 @@ public class FourDigits{
        
        System.out.println("The Four digits are "+d1+" "+d2+" "+d3+" "+d4);
         
+
         
     }
     
 }
+
