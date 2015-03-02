@@ -46,7 +46,7 @@ public class SmileGenerator{
             }
             
         }
-        System.out.print("");
+    
     
     }
 }
